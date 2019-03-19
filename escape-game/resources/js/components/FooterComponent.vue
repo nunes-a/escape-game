@@ -9,7 +9,7 @@ export default {
 	name : 'footerComponent',
 	data : function(){
 		return {
-			copyright : '&copy; 2019 Tous droits réservés - Télécom Saint-Étienne'
+			copyright : '&copy; 2019 Tous droits réservés'
 		}
 	}
 }

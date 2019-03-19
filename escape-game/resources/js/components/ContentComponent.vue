@@ -1,7 +1,29 @@
 <template>
-	<div>
-		<p>test</p>
+<div class="container-fluid">
+	<p>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			Game Master
+		</button>
+	</p>
+
+	<div class="collapse bg-light" id="collapseExample">
+		<div class="card card-body">
+			ici les inputs et button de connexion
+		</div>
 	</div>
+
+	<p>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			Joueur
+		</button>
+	</p>
+
+	<div class="collapse bg-light" id="collapseExample">
+		<div class="card card-body">
+			ici les inputs et button de connexion
+		</div>
+	</div>
+</div>
 </template>
 
 <script>
@@ -11,12 +33,12 @@ export default {
 </script>
 
 <style scoped>
-	div {
+	.container-fluid {
 		background-color:#ffffff;
-		text-align: center;
-		height: 50px;
-		line-height: 50px;
-		margin: 0;
-		padding: 0
+		margin: 0 auto;
+		padding: 10px;
+	}
+	p {
+		text-align: center
 	}
 </style>

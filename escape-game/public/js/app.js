@@ -1769,6 +1769,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'contentComponent'
 });
@@ -1827,7 +1849,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'footerComponent',
   data: function data() {
     return {
-      copyright: '&copy; 2019 Tous droits réservés - Télécom Saint-Étienne'
+      copyright: '&copy; 2019 Tous droits réservés'
     };
   }
 });
@@ -6311,7 +6333,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-e4489e22] {\n\tbackground-color:#ffffff;\n\ttext-align: center;\n\theight: 50px;\n\tline-height: 50px;\n\tmargin: 0;\n\tpadding: 0\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-e4489e22] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\np[data-v-e4489e22] {\n\ttext-align: center\n}\n", ""]);
 
 // exports
 
@@ -37646,7 +37668,61 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("p", [_vm._v("test")])])
+    return _c("div", { staticClass: "container-fluid" }, [
+      _c("p", [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#collapseExample",
+              "aria-expanded": "false",
+              "aria-controls": "collapseExample"
+            }
+          },
+          [_vm._v("\n\t\t\tGame Master\n\t\t")]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "collapse bg-light", attrs: { id: "collapseExample" } },
+        [
+          _c("div", { staticClass: "card card-body" }, [
+            _vm._v("\n\t\t\tici les inputs et button de connexion\n\t\t")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#collapseExample",
+              "aria-expanded": "false",
+              "aria-controls": "collapseExample"
+            }
+          },
+          [_vm._v("\n\t\t\tJoueur\n\t\t")]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "collapse bg-light", attrs: { id: "collapseExample" } },
+        [
+          _c("div", { staticClass: "card card-body" }, [
+            _vm._v("\n\t\t\tici les inputs et button de connexion\n\t\t")
+          ])
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
