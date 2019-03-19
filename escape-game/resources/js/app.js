@@ -22,8 +22,10 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 import HeaderComponent from './components/HeaderComponent.vue';
-import ContentComponent from './components/ContentComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+
+import ContentComponent from './components/ContentComponent.vue';
+import InscComponent from './components/InscComponent.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -37,8 +39,9 @@ const app = new Vue({
     components:
     	{
     		'header-component' : HeaderComponent,
+    		'footer-component' : FooterComponent,
     		'content-component': ContentComponent,
-    		'footer-component' : FooterComponent
+    		'insc-component'   : InscComponent
     	}
 });
 
