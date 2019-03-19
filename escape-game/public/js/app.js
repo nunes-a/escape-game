@@ -6333,7 +6333,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-e4489e22] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\np[data-v-e4489e22] {\n\ttext-align: center\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-e4489e22] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\np[data-v-e4489e22] {\n\ttext-align: center\n}\nbutton[data-v-e4489e22]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\twidth: 280px;\n\theight: 50px;\n\tborder: 2px solid #00549c;\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n}\nbutton[data-v-e4489e22]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 2px solid #00549c;\n}\n", ""]);
 
 // exports
 

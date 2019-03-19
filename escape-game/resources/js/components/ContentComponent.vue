@@ -41,4 +41,21 @@ export default {
 	p {
 		text-align: center
 	}
+	
+	button{
+		background-color: #00549c;
+		color: #ffffff;
+		width: 280px;
+		height: 50px;
+		border: 2px solid #00549c;
+		borde-radius: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	button:hover{
+		background-color: white;
+	  	color: #00549c;
+	 	border: 2px solid #00549c;
+	}
 </style>
