@@ -1,24 +1,29 @@
 <template>
 <div class="container-fluid">
+
+	<div class="media">
+	  <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/3/30/Logo_Telecom_Saint-Etienne.png/118px-Logo_Telecom_Saint-Etienne.png" class=" mx-auto d-block m-3" alt="logo">
+	</div>
+
 	<p>
-		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connexion-gamemaster" aria-expanded="false" aria-controls="collapseExample">
 			Game Master
 		</button>
 	</p>
 
-	<div class="collapse bg-light" id="collapseExample">
-		<div class="card card-body">
+	<div class="collapse bg-light" id="connexion-gamemaster">
+		<div class="card card-body mb-3">
 			ici les inputs et button de connexion
 		</div>
 	</div>
 
 	<p>
-		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connexion-joueur" aria-expanded="false" aria-controls="collapseExample">
 			Joueur
 		</button>
 	</p>
 
-	<div class="collapse bg-light" id="collapseExample">
+	<div class="collapse bg-light" id="connexion-joueur">
 		<div class="card card-body">
 			ici les inputs et button de connexion
 		</div>
@@ -38,6 +43,7 @@ export default {
 		margin: 0 auto;
 		padding: 10px;
 	}
+	
 	p {
 		text-align: center
 	}

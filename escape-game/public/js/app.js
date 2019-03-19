@@ -1791,6 +1791,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'contentComponent'
 });
@@ -37669,6 +37674,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "media" }, [
+        _c("img", {
+          staticClass: " mx-auto d-block m-3",
+          attrs: {
+            src:
+              "https://upload.wikimedia.org/wikipedia/fr/thumb/3/30/Logo_Telecom_Saint-Etienne.png/118px-Logo_Telecom_Saint-Etienne.png",
+            alt: "logo"
+          }
+        })
+      ]),
+      _vm._v(" "),
       _c("p", [
         _c(
           "button",
@@ -37677,7 +37693,7 @@ var staticRenderFns = [
             attrs: {
               type: "button",
               "data-toggle": "collapse",
-              "data-target": "#collapseExample",
+              "data-target": "#connexion-gamemaster",
               "aria-expanded": "false",
               "aria-controls": "collapseExample"
             }
@@ -37688,9 +37704,12 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "collapse bg-light", attrs: { id: "collapseExample" } },
+        {
+          staticClass: "collapse bg-light",
+          attrs: { id: "connexion-gamemaster" }
+        },
         [
-          _c("div", { staticClass: "card card-body" }, [
+          _c("div", { staticClass: "card card-body mb-3" }, [
             _vm._v("\n\t\t\tici les inputs et button de connexion\n\t\t")
           ])
         ]
@@ -37704,7 +37723,7 @@ var staticRenderFns = [
             attrs: {
               type: "button",
               "data-toggle": "collapse",
-              "data-target": "#collapseExample",
+              "data-target": "#connexion-joueur",
               "aria-expanded": "false",
               "aria-controls": "collapseExample"
             }
@@ -37715,7 +37734,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "collapse bg-light", attrs: { id: "collapseExample" } },
+        { staticClass: "collapse bg-light", attrs: { id: "connexion-joueur" } },
         [
           _c("div", { staticClass: "card card-body" }, [
             _vm._v("\n\t\t\tici les inputs et button de connexion\n\t\t")
