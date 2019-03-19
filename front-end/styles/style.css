@@ -2,6 +2,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	background-color: #f4f4f4f4;
+	font-family: Arial, sans-serif;
 }
 
 header, footer{
@@ -12,13 +13,12 @@ header, footer{
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-family: Arial, sans-serif;
 	font-size: 15px;
 	line-height: 40px;
 }
 
 section{
-	height: 450px;
+	/*height: 450px;*/
 	padding: 0;
 	margin: 0;	
 }
