@@ -37693,7 +37693,7 @@ var staticRenderFns = [
             attrs: {
               type: "button",
               "data-toggle": "collapse",
-              "data-target": "#connexion-gamemaster",
+              "data-target": "#connection-gamemaster",
               "aria-expanded": "false",
               "aria-controls": "collapseExample"
             }
@@ -37706,11 +37706,11 @@ var staticRenderFns = [
         "div",
         {
           staticClass: "collapse bg-light",
-          attrs: { id: "connexion-gamemaster" }
+          attrs: { id: "connection-gamemaster" }
         },
         [
           _c("div", { staticClass: "card card-body mb-3" }, [
-            _vm._v("\n\t\t\tici les inputs et button de connexion\n\t\t")
+            _vm._v("\n\t\t\tici les inputs et button de connection\n\t\t")
           ])
         ]
       ),
@@ -37723,7 +37723,7 @@ var staticRenderFns = [
             attrs: {
               type: "button",
               "data-toggle": "collapse",
-              "data-target": "#connexion-joueur",
+              "data-target": "#connection-joueur",
               "aria-expanded": "false",
               "aria-controls": "collapseExample"
             }
@@ -37734,10 +37734,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "collapse bg-light", attrs: { id: "connexion-joueur" } },
+        {
+          staticClass: "collapse bg-light",
+          attrs: { id: "connection-joueur" }
+        },
         [
           _c("div", { staticClass: "card card-body" }, [
-            _vm._v("\n\t\t\tici les inputs et button de connexion\n\t\t")
+            _vm._v("\n\t\t\tici les inputs et button de connection\n\t\t")
           ])
         ]
       )

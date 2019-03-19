@@ -6,26 +6,26 @@
 	</div>
 
 	<p>
-		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connexion-gamemaster" aria-expanded="false" aria-controls="collapseExample">
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connection-gamemaster" aria-expanded="false" aria-controls="collapseExample">
 			Game Master
 		</button>
 	</p>
 
-	<div class="collapse bg-light" id="connexion-gamemaster">
+	<div class="collapse bg-light" id="connection-gamemaster">
 		<div class="card card-body mb-3">
-			ici les inputs et button de connexion
+			ici les inputs et button de connection
 		</div>
 	</div>
 
 	<p>
-		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connexion-joueur" aria-expanded="false" aria-controls="collapseExample">
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connection-joueur" aria-expanded="false" aria-controls="collapseExample">
 			Joueur
 		</button>
 	</p>
 
-	<div class="collapse bg-light" id="connexion-joueur">
+	<div class="collapse bg-light" id="connection-joueur">
 		<div class="card card-body">
-			ici les inputs et button de connexion
+			ici les inputs et button de connection
 		</div>
 	</div>
 </div>
