@@ -19,12 +19,15 @@ export default {
 	div {
 		background-color:#00549c;
 		text-align: center;
+		justify-content: middle;
 		height: 50px;
-		line-height: 50px;
 		margin: 0;
 		padding: 0
 	}
 	p {
-		color:#ffffff
+		color:#ffffff;
+		line-height: 50px;
+		padding-bottom: 0;
+		margin-bottom: 0
 	}
 </style>

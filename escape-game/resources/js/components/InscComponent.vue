@@ -19,6 +19,35 @@
 		    <option value="3">Vert</option>
 		  </select>
 		</div>
+		
+		<p>
+			Nom des participants et filière d'étude :
+		</p>
+		
+		<div class="input-group mb-3">
+		  <input type="text" class="form-control" placeholder="1. Nom" aria-label="nom1" aria-describedby="basic-addon1">
+		  <input type="text" class="form-control" placeholder="Filière" aria-label="filiere1" aria-describedby="basic-addon1">		
+		</div>
+		
+		<div class="input-group mb-3">
+		  <input type="text" class="form-control" placeholder="2. Nom" aria-label="nom2" aria-describedby="basic-addon1">
+		  <input type="text" class="form-control" placeholder="Filière" aria-label="filiere2" aria-describedby="basic-addon1">		
+		</div>
+		
+		<div class="input-group mb-3">
+		  <input type="text" class="form-control" placeholder="3. Nom" aria-label="nom3" aria-describedby="basic-addon1">
+		  <input type="text" class="form-control" placeholder="Filière" aria-label="filiere3" aria-describedby="basic-addon1">		
+		</div>
+		
+		<div class="input-group mb-3">
+		  <input type="text" class="form-control" placeholder="4. Nom" aria-label="nom4" aria-describedby="basic-addon1">
+		  <input type="text" class="form-control" placeholder="Filière" aria-label="filiere4" aria-describedby="basic-addon1">		
+		</div>
+		
+		<div class="input-group mb-3">
+		  <input type="text" class="form-control" placeholder="5. Nom" aria-label="nom5" aria-describedby="basic-addon1">
+		  <input type="text" class="form-control" placeholder="Filière" aria-label="filiere5" aria-describedby="basic-addon1">		
+		</div>
 	
 		
 		<button type="button" class="btn btn-primary mx-auto d-block">Prêt</button>

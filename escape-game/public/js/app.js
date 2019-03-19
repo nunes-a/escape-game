@@ -1917,6 +1917,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'inscComponent'
 });
@@ -6399,7 +6428,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-abfbddf2] {\n\tbackground-color:#00549c;\n\ttext-align: center;\n\theight: 50px;\n\tline-height: 50px;\n\tmargin: 0;\n\tpadding: 0\n}\np[data-v-abfbddf2] {\n\tcolor:#ffffff\n}\n", ""]);
+exports.push([module.i, "\ndiv[data-v-abfbddf2] {\n\tbackground-color:#00549c;\n\ttext-align: center;\n\tjustify-content: middle;\n\theight: 50px;\n\tmargin: 0;\n\tpadding: 0\n}\np[data-v-abfbddf2] {\n\tcolor:#ffffff;\n\tline-height: 50px;\n\tpadding-bottom: 0;\n\tmargin-bottom: 0\n}\n", ""]);
 
 // exports
 
@@ -38003,6 +38032,118 @@ var staticRenderFns = [
             _c("option", { attrs: { value: "3" } }, [_vm._v("Vert")])
           ]
         )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("\n\t\tNom des participants et filière d'étude :\n\t")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "input-group mb-3" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "1. Nom",
+            "aria-label": "nom1",
+            "aria-describedby": "basic-addon1"
+          }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Filière",
+            "aria-label": "filiere1",
+            "aria-describedby": "basic-addon1"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "input-group mb-3" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "2. Nom",
+            "aria-label": "nom2",
+            "aria-describedby": "basic-addon1"
+          }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Filière",
+            "aria-label": "filiere2",
+            "aria-describedby": "basic-addon1"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "input-group mb-3" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "3. Nom",
+            "aria-label": "nom3",
+            "aria-describedby": "basic-addon1"
+          }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Filière",
+            "aria-label": "filiere3",
+            "aria-describedby": "basic-addon1"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "input-group mb-3" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "4. Nom",
+            "aria-label": "nom4",
+            "aria-describedby": "basic-addon1"
+          }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Filière",
+            "aria-label": "filiere4",
+            "aria-describedby": "basic-addon1"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "input-group mb-3" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "5. Nom",
+            "aria-label": "nom5",
+            "aria-describedby": "basic-addon1"
+          }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Filière",
+            "aria-label": "filiere5",
+            "aria-describedby": "basic-addon1"
+          }
+        })
       ]),
       _vm._v(" "),
       _c(
