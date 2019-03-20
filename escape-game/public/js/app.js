@@ -1835,14 +1835,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'accueilComponent'
 });
@@ -6504,7 +6496,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\ninput[data-v-28c93594] {\n\twidth: 300px\n}\nbutton[data-v-28c93594]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\t/*width: 280px;\n\theight: 35px;*/\n\t/*border: 2px solid #00549c;*/\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n}\nbutton[data-v-28c93594]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 1px solid #00549c;\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\n#topo[data-v-28c93594] {\n\twidth: 60%;\n\tmargin: 0 auto\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n#chrono[data-v-28c93594] {\n\twidth: 300px;\n\ttext-align: center;\n\tmargin: 50px auto\n}\n", ""]);
 
 // exports
 
@@ -37938,29 +37930,56 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "bg-light", attrs: { id: "eqcouleur" } }, [
-        _c("p", [
-          _vm._v("\n\t\t\tNom de l'équipe : "),
-          _c("b", [_vm._v("TÉLÉCOM")])
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("\n\t\t\tCouleur : "),
-          _c("span", { staticClass: "badge badge-danger" }, [_vm._v("Rouge")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("p", [_vm._v("\n\t\tParcours, énigmes validées :\n\t")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row border m-3" }, [
+      _c(
+        "div",
+        {
+          staticClass: "row shadow p-3 mb-5 bg-white rounded",
+          attrs: { id: "topo" }
+        },
+        [
+          _c("div", { staticClass: "col-12 col-sm-5 border" }, [
+            _vm._v("\n\t\t\t\tlogo\n\t\t\t")
+          ]),
+          _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-12 col-sm-2 align-self-center text-center" },
-            [_vm._v("\n\t    \tÉnigme ?\n\t    ")]
+            { staticClass: "col-12 col-sm-7", attrs: { id: "eqcouleur" } },
+            [
+              _c("p", [
+                _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
+                _c("b", [_vm._v("TÉLÉCOM")])
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("\n\t\t\t\t\tCouleur : "),
+                _c("span", { staticClass: "badge badge-danger" }, [
+                  _vm._v("Rouge")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
+                  _vm._v("Déconnexion")
+                ])
+              ])
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [_vm._v("\n\t\t\tParcours, énigmes validées :\n\t\t")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row border" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-12 col-sm-2 align-self-center text-center p-2"
+            },
+            [_vm._v("\n\t\t    \tÉnigme ?\n\t\t    ")]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "col-12 col-sm-8 align-self-center" }, [
+          _c("div", { staticClass: "col-12 col-sm-8 align-self-center p-2" }, [
             _c("div", { staticClass: "progress" }, [
               _c("div", {
                 staticClass:
@@ -37978,7 +37997,9 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-12 col-sm-2 align-self-center text-center" },
+            {
+              staticClass: "col-12 col-sm-2 align-self-center text-center p-2"
+            },
             [
               _c(
                 "a",
@@ -37990,12 +38011,21 @@ var staticRenderFns = [
                     href: "#exampleModal"
                   }
                 },
-                [_vm._v("\n\t\t\t  Aller\n\t\t\t")]
+                [_vm._v("\n\t\t\t\t  Aller\n\t\t\t\t")]
               )
             ]
           )
         ])
       ]),
+      _vm._v(" "),
+      _c(
+        "h1",
+        {
+          staticClass: "border border-primary rounded-pill shadow",
+          attrs: { id: "chrono" }
+        },
+        [_vm._v("00 : 00 : 00 s")]
+      ),
       _vm._v(" "),
       _c(
         "div",
@@ -38081,11 +38111,11 @@ var staticRenderFns = [
       ),
       _vm._v(" "),
       _c("p", [
-        _vm._v("\n\t\tBesoin d'aide? Appelez un Game Master "),
+        _vm._v("\n\t\t\tBesoin d'aide? Appelez un Game Master "),
         _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
           _vm._v("ici")
         ]),
-        _vm._v(" .\n\t")
+        _vm._v(" .\n\t\t")
       ])
     ])
   }

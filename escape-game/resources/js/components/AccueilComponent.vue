@@ -1,52 +1,49 @@
 <template>
 	<div class="container-fluid">
-		<div class="bg-light" id="eqcouleur">
-			<p>
-				Nom de l'équipe : <b>TÉLÉCOM</b>
-			</p>
-			<p>
-				Couleur : <span class="badge badge-danger">Rouge</span>
-			</p>
+		<div class="row shadow p-3 mb-5 bg-white rounded" id="topo">
+			<div class="col-12 col-sm-5 border">
+				logo
+			</div>
+			<div class="col-12 col-sm-7" id="eqcouleur">
+				<p>
+					Nom de l'équipe : <b>TÉLÉCOM</b>
+				</p>
+				<p>
+					Couleur : <span class="badge badge-danger">Rouge</span>
+				</p>
+				<p>
+					<a href="#" class="text-primary">Déconnexion</a>
+				</p>
+			</div>
 		</div>
 		
 		<p>
 			Parcours, énigmes validées :
 		</p>
-				
-		
-
-
-		
-
 		
 		<div class="container">
-		  <div class="row border m-3">
-		    <div class="col-12 col-sm-2 align-self-center text-center">
+		  <div class="row border">
+		    <div class="col-12 col-sm-2 align-self-center text-center p-2">
 		    	Énigme ?
 		    </div>
-		    <div class="col-12 col-sm-8 align-self-center">
+		    <div class="col-12 col-sm-8 align-self-center p-2">
 		      	<div class="progress">
 				  <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 				</div>
 		    </div>
-		    <div class="col-12 col-sm-2 align-self-center text-center">
-		    
-		    
+		    <div class="col-12 col-sm-2 align-self-center text-center p-2">
 		    	<a type="button" class="text-primary" data-toggle="modal" href="#exampleModal">
 				  Aller
 				</a>
-
 		    </div>
 		  </div>
 		</div>
 		
 		
+		<h1 class="border border-primary rounded-pill shadow" id="chrono">00 : 00 : 00 s</h1>
 		
 		
-		
-		
-		
-		<!-- Modal -->
+<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
@@ -67,14 +64,9 @@
 		  </div>
 		</div>
 		
-		
-		
-		
 		<p>
 			Besoin d'aide? Appelez un Game Master <a href="#" class="text-primary">ici</a> .
 		</p>
-	
-
 	</div>
 </template>
 
@@ -91,34 +83,23 @@ export default {
 		padding: 10px;
 	}
 	
+	#topo {
+		width: 60%;
+		margin: 0 auto
+	}
+	
 	p {
 		text-align: center;
 		padding: 3px
 	}
 	
-	input {
-		width: 300px
-	}
-	
-	button{
-		background-color: #00549c;
-		color: #ffffff;
-		/*width: 280px;
-		height: 35px;*/
-		/*border: 2px solid #00549c;*/
-		borde-radius: 0;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-
-	button:hover{
-		background-color: white;
-	  	color: #00549c;
-	 	border: 1px solid #00549c;
-	}
-
-	
 	#eqcouleur > p > span {
 		width: 100px;
+	}
+	
+	#chrono {
+		width: 300px;
+		text-align: center;
+		margin: 50px auto
 	}
 </style>
