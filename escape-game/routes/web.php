@@ -22,3 +22,7 @@ Route::get('/main', function () {
 Route::get('/insc', function () {
     return view('insc');
 });
+
+Route::get('/accueil', function () {
+    return view('accueil');
+});
