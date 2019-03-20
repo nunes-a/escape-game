@@ -1780,6 +1780,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'accueilComponent'
 });
@@ -6441,7 +6454,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\np[data-v-28c93594] {\n\ttext-align: center\n}\ninput[data-v-28c93594] {\n\twidth: 300px\n}\nbutton[data-v-28c93594]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\twidth: 280px;\n\theight: 50px;\n\tborder: 2px solid #00549c;\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n}\nbutton[data-v-28c93594]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 2px solid #00549c;\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\ninput[data-v-28c93594] {\n\twidth: 300px\n}\nbutton[data-v-28c93594]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\t/*width: 280px;\n\theight: 50px;*/\n\t/*border: 2px solid #00549c;*/\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n}\nbutton[data-v-28c93594]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 1px solid #00549c;\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n", ""]);
 
 // exports
 
@@ -37875,11 +37888,50 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("p", [_vm._v("\n\t\tNom de l'équipe\n\t")]),
+      _c("div", { staticClass: "bg-light", attrs: { id: "eqcouleur" } }, [
+        _c("p", [
+          _vm._v("\n\t\t\tNom de l'équipe : "),
+          _c("b", [_vm._v("TÉLÉCOM")])
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("\n\t\t\tCouleur : "),
+          _c("span", { staticClass: "badge badge-danger" }, [_vm._v("Rouge")])
+        ])
+      ]),
       _vm._v(" "),
-      _c("p", [_vm._v("\n\t\tCouleur de l'équipe\n\t")]),
+      _c("p", [_vm._v("\n\t\tParcours, énigmes validées :\n\t")]),
       _vm._v(" "),
-      _c("p", [_vm._v("\n\t\tParcours, énigmes validées :\n\t")])
+      _c("div", { staticClass: "input-group mb-3" }, [
+        _c("div", { staticClass: "input-group-prepend" }, [
+          _c(
+            "span",
+            { staticClass: "input-group-text", attrs: { id: "basic-addon1" } },
+            [_vm._v("Énigme ?")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Entrez le code",
+            "aria-label": "Username",
+            "aria-describedby": "basic-addon1"
+          }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group-append" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-outline-secondary",
+              attrs: { type: "button" }
+            },
+            [_vm._v("Ok")]
+          )
+        ])
+      ])
     ])
   }
 ]

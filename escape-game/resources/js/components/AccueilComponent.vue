@@ -1,16 +1,29 @@
 <template>
 	<div class="container-fluid">
-		<p>
-			Nom de l'équipe
-		</p>
-		<p>
-			Couleur de l'équipe
-		</p>
+		<div class="bg-light" id="eqcouleur">
+			<p>
+				Nom de l'équipe : <b>TÉLÉCOM</b>
+			</p>
+			<p>
+				Couleur : <span class="badge badge-danger">Rouge</span>
+			</p>
+		</div>
+		
 		<p>
 			Parcours, énigmes validées :
 		</p>
 		
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text" id="basic-addon1">Énigme ?</span>
+		  </div>
+		  <input type="text" class="form-control" placeholder="Entrez le code" aria-label="Username" aria-describedby="basic-addon1">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary" type="button">Ok</button>
+			</div>
+		</div>
 		
+	
 
 	</div>
 </template>
@@ -29,7 +42,8 @@ export default {
 	}
 	
 	p {
-		text-align: center
+		text-align: center;
+		padding: 3px
 	}
 	
 	input {
@@ -39,9 +53,9 @@ export default {
 	button{
 		background-color: #00549c;
 		color: #ffffff;
-		width: 280px;
-		height: 50px;
-		border: 2px solid #00549c;
+		/*width: 280px;
+		height: 50px;*/
+		/*border: 2px solid #00549c;*/
 		borde-radius: 0;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -50,6 +64,10 @@ export default {
 	button:hover{
 		background-color: white;
 	  	color: #00549c;
-	 	border: 2px solid #00549c;
+	 	border: 1px solid #00549c;
+	}
+	
+	#eqcouleur > p > span {
+		width: 100px;
 	}
 </style>
