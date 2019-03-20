@@ -26,6 +26,7 @@ export default {
 	}
 	p {
 		color:#ffffff;
+		font-size: 11px;
 		line-height: 50px;
 		padding-bottom: 0;
 		margin-bottom: 0

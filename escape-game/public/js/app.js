@@ -1780,47 +1780,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'inscComponent'
+  name: 'accueilComponent'
 });
 
 /***/ }),
@@ -6518,7 +6479,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-abfbddf2] {\n\tbackground-color:#00549c;\n\ttext-align: center;\n\tjustify-content: middle;\n\theight: 50px;\n\tmargin: 0;\n\tpadding: 0\n}\np[data-v-abfbddf2] {\n\tcolor:#ffffff;\n\tline-height: 50px;\n\tpadding-bottom: 0;\n\tmargin-bottom: 0\n}\n", ""]);
+exports.push([module.i, "\ndiv[data-v-abfbddf2] {\n\tbackground-color:#00549c;\n\ttext-align: center;\n\tjustify-content: middle;\n\theight: 50px;\n\tmargin: 0;\n\tpadding: 0\n}\np[data-v-abfbddf2] {\n\tcolor:#ffffff;\n\tfont-size: 11px;\n\tline-height: 50px;\n\tpadding-bottom: 0;\n\tmargin-bottom: 0\n}\n", ""]);
 
 // exports
 
@@ -37914,167 +37875,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("p", [_vm._v("\n\t\tAvant de commencer, entrer ces infos :\n\t")]),
+      _c("p", [_vm._v("\n\t\tNom de l'équipe\n\t")]),
       _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "Nom de l'équipe",
-            "aria-label": "Username",
-            "aria-describedby": "basic-addon1"
-          }
-        })
-      ]),
+      _c("p", [_vm._v("\n\t\tCouleur de l'équipe\n\t")]),
       _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("div", { staticClass: "input-group-prepend" }, [
-          _c(
-            "label",
-            {
-              staticClass: "input-group-text",
-              attrs: { for: "inputGroupSelect01" }
-            },
-            [_vm._v("Couleur de l'équipe")]
-          )
-        ]),
-        _vm._v(" "),
-        _c(
-          "select",
-          { staticClass: "custom-select", attrs: { id: "inputGroupSelect01" } },
-          [
-            _c("option", { attrs: { selected: "" } }, [_vm._v("Choisir...")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("Bleu")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("Rouge")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("Vert")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [_vm._v("\n\t\tNom des participants et filière d'étude :\n\t")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "1. Nom",
-            "aria-label": "nom1",
-            "aria-describedby": "basic-addon1"
-          }
-        }),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "Filière",
-            "aria-label": "filiere1",
-            "aria-describedby": "basic-addon1"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "2. Nom",
-            "aria-label": "nom2",
-            "aria-describedby": "basic-addon1"
-          }
-        }),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "Filière",
-            "aria-label": "filiere2",
-            "aria-describedby": "basic-addon1"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "3. Nom",
-            "aria-label": "nom3",
-            "aria-describedby": "basic-addon1"
-          }
-        }),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "Filière",
-            "aria-label": "filiere3",
-            "aria-describedby": "basic-addon1"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "4. Nom",
-            "aria-label": "nom4",
-            "aria-describedby": "basic-addon1"
-          }
-        }),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "Filière",
-            "aria-label": "filiere4",
-            "aria-describedby": "basic-addon1"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "input-group mb-3" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "5. Nom",
-            "aria-label": "nom5",
-            "aria-describedby": "basic-addon1"
-          }
-        }),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            type: "text",
-            placeholder: "Filière",
-            "aria-label": "filiere5",
-            "aria-describedby": "basic-addon1"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary mx-auto d-block",
-          attrs: { type: "button" }
-        },
-        [_vm._v("Prêt")]
-      )
+      _c("p", [_vm._v("\n\t\tParcours, énigmes validées :\n\t")])
     ])
   }
 ]
