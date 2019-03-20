@@ -12,17 +12,63 @@
 		<p>
 			Parcours, énigmes validées :
 		</p>
+				
 		
-		<div class="input-group mb-3">
-		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="basic-addon1">Énigme ?</span>
+
+
+		
+
+		
+		<div class="container">
+		  <div class="row">
+		    <div class="col">
+		    	Énigme ?
+		    </div>
+		    <div class="col">
+		      	<div class="progress">
+				  <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+				</div>
+		    </div>
+		    <div class="col">
+		    	<a class="text-primary" data-toggle="modal" data-target="#exampleModal">ici</a>
+
+		    </div>
 		  </div>
-		  <input type="text" class="form-control" placeholder="Entrez le code" aria-label="Username" aria-describedby="basic-addon1">
-			<div class="input-group-append">
-				<button class="btn btn-outline-secondary" type="button">Ok</button>
-			</div>
 		</div>
 		
+		
+		
+		
+		
+		
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Énigme ?</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<input type="text" class="form-control" placeholder="Code de déverrouillage" aria-label="Username" aria-describedby="basic-addon1">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+		        <button type="button" class="btn btn-primary">Aller</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		
+		
+		
+		<p>
+			Besoin d'aide? Appelez un Game Master <a href="#" class="text-primary">ici</a> .
+		</p>
 	
 
 	</div>
@@ -53,8 +99,8 @@ export default {
 	button{
 		background-color: #00549c;
 		color: #ffffff;
-		/*width: 280px;
-		height: 50px;*/
+		/*width: 280px;*/
+		height: 35px;
 		/*border: 2px solid #00549c;*/
 		borde-radius: 0;
 		text-transform: uppercase;
@@ -66,6 +112,7 @@ export default {
 	  	color: #00549c;
 	 	border: 1px solid #00549c;
 	}
+
 	
 	#eqcouleur > p > span {
 		width: 100px;
