@@ -20,17 +20,21 @@
 
 		
 		<div class="container">
-		  <div class="row">
-		    <div class="col">
+		  <div class="row border m-3">
+		    <div class="col-12 col-sm-2 align-self-center text-center">
 		    	Énigme ?
 		    </div>
-		    <div class="col">
+		    <div class="col-12 col-sm-8 align-self-center">
 		      	<div class="progress">
 				  <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 				</div>
 		    </div>
-		    <div class="col">
-		    	<a class="text-primary" data-toggle="modal" data-target="#exampleModal">ici</a>
+		    <div class="col-12 col-sm-2 align-self-center text-center">
+		    
+		    
+		    	<a type="button" class="text-primary" data-toggle="modal" href="#exampleModal">
+				  Aller
+				</a>
 
 		    </div>
 		  </div>
@@ -99,8 +103,8 @@ export default {
 	button{
 		background-color: #00549c;
 		color: #ffffff;
-		/*width: 280px;*/
-		height: 35px;
+		/*width: 280px;
+		height: 35px;*/
 		/*border: 2px solid #00549c;*/
 		borde-radius: 0;
 		text-transform: uppercase;
