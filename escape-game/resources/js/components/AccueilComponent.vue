@@ -153,12 +153,10 @@
 
 <script>
 export default {
-	props: [
-		'nomequipe'
-	],
 	data: function(){
 		return {
 			name : 'accueilComponent',
+			nomequipe : '2',
 			nivequipe : '1',
 			colequipe : 'Rouge',
 			chronoequipe : '00:00:00'

@@ -1917,10 +1917,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['nomequipe'],
   data: function data() {
     return {
       name: 'accueilComponent',
+      nomequipe: '2',
       nivequipe: '1',
       colequipe: 'Rouge',
       chronoequipe: '00:00:00'
