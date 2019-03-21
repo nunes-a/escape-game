@@ -1921,7 +1921,6 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       name: 'accueilComponent',
-      nomequipe: '',
       nivequipe: '1',
       colequipe: 'Rouge',
       chronoequipe: '00:00:00'
@@ -38032,7 +38031,7 @@ var render = function() {
           [
             _c("p", [
               _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
-              _c("b", [_vm._v(_vm._s(_vm.nomequipe))])
+              _c("b", [_c("nomequipe", { attrs: { nomequipe: "2" } })], 1)
             ]),
             _vm._v(" "),
             _c("p", [

@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-12 col-sm-7" id="eqcouleur">
 				<p>
-					Nom de l'équipe : <b>{{ nomequipe }}</b>
+					Nom de l'équipe : <b><nomequipe nomequipe="2"></nomequipe></b>
 				</p>
 				<p>
 					Couleur : <span class="badge badge-light">{{ colequipe }}</span>
@@ -159,12 +159,12 @@ export default {
 	data: function(){
 		return {
 			name : 'accueilComponent',
-			nomequipe: '',
 			nivequipe : '1',
 			colequipe : 'Rouge',
 			chronoequipe : '00:00:00'
 		}
 	}
+	
 }
 </script>
 
