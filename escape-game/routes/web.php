@@ -23,6 +23,12 @@ Route::get('/insc', function () {
     return view('insc');
 });
 
-Route::get('/accueil', function () {
-    return view('accueil');
+Route::get('/jeu/{nomequipe}', function ($nomequipe=1) {
+    return view('accueil')->with('nomequipe', $nomequipe);
 });
+
+
+// Route::get('/jeu/{nomequipe}', function () {
+//     $nomequipe = request('nomequipe');
+//     return view('accueil',['nomequipe' => $nomequipe]);
+// });

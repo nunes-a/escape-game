@@ -1881,8 +1881,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'accueilComponent'
+  props: ['nomequipe'],
+  data: function data() {
+    return {
+      name: 'accueilComponent',
+      nomequipe: '',
+      nivequipe: '1',
+      colequipe: 'Rouge',
+      chronoequipe: '00:00:00'
+    };
+  }
 });
 
 /***/ }),
@@ -6542,7 +6586,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\n#topo[data-v-28c93594] {\n\twidth: 60%;\n\tmargin: 0 auto\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n.alert[data-v-28c93594] {\n\twidth : 100px;\n\theight : 25px;\n\tline-height: 25px;\n\ttext-align: center;\n\tmargin: 0 auto;\t\t\n\tpadding: 0\n}\n#tabb[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 10px 25px\n}\n#chrono[data-v-28c93594] {\n\twidth: 300px;\n\ttext-align: center;\n\tmargin: 50px auto\n}\nbutton[data-v-28c93594]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\twidth: 280px;\n\theight: 50px;\n\tborder: 2px solid #00549c;\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n}\nbutton[data-v-28c93594]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 2px solid #00549c;\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\n#topo[data-v-28c93594] {\n\twidth: 60%;\n\tmargin: 0 auto\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n.alert[data-v-28c93594] {\n\twidth : 100px;\n\theight : 25px;\n\tline-height: 25px;\n\ttext-align: center;\n\tmargin: 0 auto;\t\t\n\tpadding: 0\n}\n#tabb[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 10px 25px\n}\n#chrono[data-v-28c93594] {\n\twidth: 300px;\n\ttext-align: center;\n\tmargin: 20px auto\n}\nbutton[data-v-28c93594]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\twidth: 300px;\n\theight: 40px;\n\tborder: 2px solid #00549c;\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n\tmargin: 20px auto\n}\nbutton[data-v-28c93594]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 2px solid #00549c;\n}\n", ""]);
 
 // exports
 
@@ -37968,7 +38012,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid" }, [
+  return _c("div", { staticClass: "container-fluid pt-4" }, [
     _c(
       "div",
       {
@@ -37982,127 +38026,137 @@ var render = function() {
           })
         ]),
         _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-12 col-sm-7", attrs: { id: "eqcouleur" } },
+          [
+            _c("p", [
+              _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
+              _c("b", [_vm._v(_vm._s(_vm.nomequipe))])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n\t\t\t\t\tCouleur : "),
+              _c("span", { staticClass: "badge badge-light" }, [
+                _vm._v(_vm._s(_vm.colequipe))
+              ])
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 col-sm-6 text-center" }, [
+          _c(
+            "h1",
+            {
+              staticClass: "border border-primary rounded-pill shadow",
+              attrs: { id: "chrono" }
+            },
+            [_vm._v(_vm._s(_vm.chronoequipe))]
+          )
+        ]),
+        _vm._v(" "),
         _vm._m(0)
-      ]
-    ),
+      ])
+    ]),
     _vm._v(" "),
-    _vm._m(1),
+    _c("p", { staticClass: "mt-4" }, [
+      _vm._v("\n\t\t\tParcours, énigmes validées :\n\t\t")
+    ]),
     _vm._v(" "),
-    _c("p", [_vm._v("\n\t\t\tParcours, énigmes validées :\n\t\t")]),
-    _vm._v(" "),
-    _vm._m(2),
-    _vm._v(" "),
-    _c(
-      "h1",
-      {
-        staticClass: "border border-primary rounded-pill shadow",
-        attrs: { id: "chrono" }
-      },
-      [_vm._v("00 : 00 : 00 s")]
-    ),
-    _vm._v(" "),
-    _vm._m(3),
-    _vm._v(" "),
-    _vm._m(4)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-12 col-sm-7", attrs: { id: "eqcouleur" } },
-      [
-        _c("p", [
-          _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
-          _c("b", [_vm._v("TÉLÉCOM")])
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("\n\t\t\t\t\tCouleur : "),
-          _c("span", { staticClass: "badge badge-danger" }, [_vm._v("Rouge")])
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
-            _vm._v("Déconnexion")
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("\n\t\t\t\tSuivant\n\t\t\t")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row border" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row border mb-3" }, [
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
           _vm._v("\n\t\t    \tÉnigme 1\n\t\t    ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
-          _c(
-            "div",
-            { staticClass: "alert alert-success", attrs: { role: "alert" } },
-            [_vm._v("\n\t\t\t\t  Terminé !\n\t\t\t\t")]
-          )
+          _vm.nivequipe >= 1
+            ? _c(
+                "div",
+                {
+                  staticClass: "alert alert-success",
+                  attrs: { role: "alert" }
+                },
+                [_vm._v("\n\t\t\t\t\t  Terminé !\n\t\t\t\t\t")]
+              )
+            : _c(
+                "div",
+                { staticClass: "alert alert-light", attrs: { role: "alert" } },
+                [_vm._v("\n\t\t\t\t\t  En attente !\n\t\t\t\t\t")]
+              )
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row border" }, [
+      _c("div", { staticClass: "row border mb-3" }, [
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
           _vm._v("\n\t\t    \tÉnigme 2\n\t\t    ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
-          _c(
-            "div",
-            { staticClass: "alert alert-dark", attrs: { role: "alert" } },
-            [_vm._v("\n\t\t\t\t  En cours !\n\t\t\t\t")]
-          )
+          _vm.nivequipe >= 2
+            ? _c(
+                "div",
+                {
+                  staticClass: "alert alert-success",
+                  attrs: { role: "alert" }
+                },
+                [_vm._v("\n\t\t\t\t\t  Terminé !\n\t\t\t\t\t")]
+              )
+            : _c(
+                "div",
+                { staticClass: "alert alert-light", attrs: { role: "alert" } },
+                [_vm._v("\n\t\t\t\t\t  En attente !\n\t\t\t\t\t")]
+              )
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row border" }, [
+      _c("div", { staticClass: "row border mb-3" }, [
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
           _vm._v("\n\t\t    \tÉnigme 3\n\t\t    ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
-          _c(
-            "div",
-            { staticClass: "alert alert-light", attrs: { role: "alert" } },
-            [_vm._v("\n\t\t\t\t  En attente !\n\t\t\t\t")]
-          )
+          _vm.nivequipe >= 3
+            ? _c(
+                "div",
+                {
+                  staticClass: "alert alert-success",
+                  attrs: { role: "alert" }
+                },
+                [_vm._v("\n\t\t\t\t\t  Terminé !\n\t\t\t\t\t")]
+              )
+            : _c(
+                "div",
+                { staticClass: "alert alert-light", attrs: { role: "alert" } },
+                [_vm._v("\n\t\t\t\t\t  En attente !\n\t\t\t\t\t")]
+              )
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row border" }, [
+      _c("div", { staticClass: "row border mb-3" }, [
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
           _vm._v("\n\t\t    \tÉnigme 4\n\t\t    ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
-          _c(
-            "div",
-            { staticClass: "alert alert-light", attrs: { role: "alert" } },
-            [_vm._v("\n\t\t\t\t  En attente !\n\t\t\t\t")]
-          )
+          _vm.nivequipe >= 4
+            ? _c(
+                "div",
+                {
+                  staticClass: "alert alert-success",
+                  attrs: { role: "alert" }
+                },
+                [_vm._v("\n\t\t\t\t\t  Terminé !\n\t\t\t\t\t")]
+              )
+            : _c(
+                "div",
+                { staticClass: "alert alert-light", attrs: { role: "alert" } },
+                [_vm._v("\n\t\t\t\t\t  En attente !\n\t\t\t\t\t")]
+              )
         ])
       ]),
       _vm._v(" "),
@@ -38112,13 +38166,55 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
-          _c(
-            "div",
-            { staticClass: "alert alert-light", attrs: { role: "alert" } },
-            [_vm._v("\n\t\t\t\t  En attente !\n\t\t\t\t")]
-          )
+          _vm.nivequipe >= 5
+            ? _c(
+                "div",
+                {
+                  staticClass: "alert alert-success",
+                  attrs: { role: "alert" }
+                },
+                [_vm._v("\n\t\t\t\t\t  Terminé !\n\t\t\t\t\t")]
+              )
+            : _c(
+                "div",
+                { staticClass: "alert alert-light", attrs: { role: "alert" } },
+                [_vm._v("\n\t\t\t\t\t  En attente !\n\t\t\t\t\t")]
+              )
         ])
       ])
+    ]),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 col-sm-6 text-center" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-primary align-items-center",
+          attrs: { type: "button" }
+        },
+        [_vm._v("\n\t\t\t\t\t\tSuivant\n\t\t\t\t\t")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "mt-4" }, [
+      _vm._v("\n\t\t\tBesoin d'aide? Appelez un Game Master "),
+      _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
+        _vm._v("ici")
+      ]),
+      _vm._v(" .\n\t\t")
     ])
   },
   function() {
@@ -38204,18 +38300,6 @@ var staticRenderFns = [
         )
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("\n\t\t\tBesoin d'aide? Appelez un Game Master "),
-      _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
-        _vm._v("ici")
-      ]),
-      _vm._v(" .\n\t\t")
-    ])
   }
 ]
 render._withStripped = true
