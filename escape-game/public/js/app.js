@@ -38031,7 +38031,7 @@ var render = function() {
           [
             _c("p", [
               _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
-              _c("b", [_c("nomequipe", { attrs: { nomequipe: "2" } })], 1)
+              _c("b", [_vm._v(_vm._s(_vm.nomequipe))])
             ]),
             _vm._v(" "),
             _c("p", [

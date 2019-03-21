@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-12 col-sm-7" id="eqcouleur">
 				<p>
-					Nom de l'équipe : <b><nomequipe nomequipe="2"></nomequipe></b>
+					Nom de l'équipe : <b>{{ nomequipe }}</b>
 				</p>
 				<p>
 					Couleur : <span class="badge badge-light">{{ colequipe }}</span>
