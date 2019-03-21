@@ -1835,6 +1835,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'accueilComponent'
 });
@@ -6496,7 +6542,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\n#topo[data-v-28c93594] {\n\twidth: 60%;\n\tmargin: 0 auto\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n#chrono[data-v-28c93594] {\n\twidth: 300px;\n\ttext-align: center;\n\tmargin: 50px auto\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-28c93594] {\n\tbackground-color:#ffffff;\n\tmargin: 0 auto;\n\tpadding: 10px;\n}\n#topo[data-v-28c93594] {\n\twidth: 60%;\n\tmargin: 0 auto\n}\np[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 3px\n}\n#eqcouleur > p > span[data-v-28c93594] {\n\twidth: 100px;\n}\n.alert[data-v-28c93594] {\n\twidth : 100px;\n\theight : 25px;\n\tline-height: 25px;\n\ttext-align: center;\n\tmargin: 0 auto;\t\t\n\tpadding: 0\n}\n#tabb[data-v-28c93594] {\n\ttext-align: center;\n\tpadding: 10px 25px\n}\n#chrono[data-v-28c93594] {\n\twidth: 300px;\n\ttext-align: center;\n\tmargin: 50px auto\n}\nbutton[data-v-28c93594]{\n\tbackground-color: #00549c;\n\tcolor: #ffffff;\n\twidth: 280px;\n\theight: 50px;\n\tborder: 2px solid #00549c;\n\tborde-radius: 0;\n\ttext-transform: uppercase;\n\tfont-weight: bold;\n}\nbutton[data-v-28c93594]:hover{\n\tbackground-color: white;\n  \tcolor: #00549c;\n \tborder: 2px solid #00549c;\n}\n", ""]);
 
 // exports
 
@@ -37922,201 +37968,253 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c(
+      "div",
+      {
+        staticClass: "row shadow p-3 mb-5 bg-white rounded",
+        attrs: { id: "topo" }
+      },
+      [
+        _c("div", { staticClass: "col-12 col-sm-5 text-center p-2" }, [
+          _c("img", {
+            attrs: { src: "../resources/js/components/images/logo.png" }
+          })
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
+      ]
+    ),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("p", [_vm._v("\n\t\t\tParcours, énigmes validées :\n\t\t")]),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _c(
+      "h1",
+      {
+        staticClass: "border border-primary rounded-pill shadow",
+        attrs: { id: "chrono" }
+      },
+      [_vm._v("00 : 00 : 00 s")]
+    ),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _vm._m(4)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid" }, [
+    return _c(
+      "div",
+      { staticClass: "col-12 col-sm-7", attrs: { id: "eqcouleur" } },
+      [
+        _c("p", [
+          _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
+          _c("b", [_vm._v("TÉLÉCOM")])
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("\n\t\t\t\t\tCouleur : "),
+          _c("span", { staticClass: "badge badge-danger" }, [_vm._v("Rouge")])
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
+            _vm._v("Déconnexion")
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
       _c(
-        "div",
-        {
-          staticClass: "row shadow p-3 mb-5 bg-white rounded",
-          attrs: { id: "topo" }
-        },
-        [
-          _c("div", { staticClass: "col-12 col-sm-5 border" }, [
-            _vm._v("\n\t\t\t\tlogo\n\t\t\t")
-          ]),
-          _vm._v(" "),
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "button" } },
+        [_vm._v("\n\t\t\t\tSuivant\n\t\t\t")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row border" }, [
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _vm._v("\n\t\t    \tÉnigme 1\n\t\t    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
           _c(
             "div",
-            { staticClass: "col-12 col-sm-7", attrs: { id: "eqcouleur" } },
-            [
-              _c("p", [
-                _vm._v("\n\t\t\t\t\tNom de l'équipe : "),
-                _c("b", [_vm._v("TÉLÉCOM")])
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("\n\t\t\t\t\tCouleur : "),
-                _c("span", { staticClass: "badge badge-danger" }, [
-                  _vm._v("Rouge")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
-                  _vm._v("Déconnexion")
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("p", [_vm._v("\n\t\t\tParcours, énigmes validées :\n\t\t")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row border" }, [
-          _c(
-            "div",
-            {
-              staticClass: "col-12 col-sm-2 align-self-center text-center p-2"
-            },
-            [_vm._v("\n\t\t    \tÉnigme ?\n\t\t    ")]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-12 col-sm-8 align-self-center p-2" }, [
-            _c("div", { staticClass: "progress" }, [
-              _c("div", {
-                staticClass:
-                  "progress-bar progress-bar-striped bg-danger progress-bar-animated",
-                staticStyle: { width: "75%" },
-                attrs: {
-                  role: "progressbar",
-                  "aria-valuenow": "75",
-                  "aria-valuemin": "0",
-                  "aria-valuemax": "100"
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col-12 col-sm-2 align-self-center text-center p-2"
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "text-primary",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "modal",
-                    href: "#exampleModal"
-                  }
-                },
-                [_vm._v("\n\t\t\t\t  Aller\n\t\t\t\t")]
-              )
-            ]
+            { staticClass: "alert alert-success", attrs: { role: "alert" } },
+            [_vm._v("\n\t\t\t\t  Terminé !\n\t\t\t\t")]
           )
         ])
       ]),
       _vm._v(" "),
-      _c(
-        "h1",
-        {
-          staticClass: "border border-primary rounded-pill shadow",
-          attrs: { id: "chrono" }
-        },
-        [_vm._v("00 : 00 : 00 s")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "modal fade",
-          attrs: {
-            id: "exampleModal",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "exampleModalLabel",
-            "aria-hidden": "true"
-          }
-        },
-        [
+      _c("div", { staticClass: "row border" }, [
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _vm._v("\n\t\t    \tÉnigme 2\n\t\t    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
           _c(
             "div",
-            { staticClass: "modal-dialog", attrs: { role: "document" } },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c(
-                    "h5",
-                    {
-                      staticClass: "modal-title",
-                      attrs: { id: "exampleModalLabel" }
-                    },
-                    [_vm._v("Énigme ?")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: {
-                        type: "button",
-                        "data-dismiss": "modal",
-                        "aria-label": "Close"
-                      }
-                    },
-                    [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("×")
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      placeholder: "Code de déverrouillage",
-                      "aria-label": "Username",
-                      "aria-describedby": "basic-addon1"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-secondary",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("X")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Aller")]
-                  )
-                ])
-              ])
-            ]
+            { staticClass: "alert alert-dark", attrs: { role: "alert" } },
+            [_vm._v("\n\t\t\t\t  En cours !\n\t\t\t\t")]
           )
-        ]
-      ),
+        ])
+      ]),
       _vm._v(" "),
-      _c("p", [
-        _vm._v("\n\t\t\tBesoin d'aide? Appelez un Game Master "),
-        _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
-          _vm._v("ici")
+      _c("div", { staticClass: "row border" }, [
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _vm._v("\n\t\t    \tÉnigme 3\n\t\t    ")
         ]),
-        _vm._v(" .\n\t\t")
+        _vm._v(" "),
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _c(
+            "div",
+            { staticClass: "alert alert-light", attrs: { role: "alert" } },
+            [_vm._v("\n\t\t\t\t  En attente !\n\t\t\t\t")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row border" }, [
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _vm._v("\n\t\t    \tÉnigme 4\n\t\t    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _c(
+            "div",
+            { staticClass: "alert alert-light", attrs: { role: "alert" } },
+            [_vm._v("\n\t\t\t\t  En attente !\n\t\t\t\t")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row border" }, [
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _vm._v("\n\t\t    \tÉnigme 5\n\t\t    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-6", attrs: { id: "tabb" } }, [
+          _c(
+            "div",
+            { staticClass: "alert alert-light", attrs: { role: "alert" } },
+            [_vm._v("\n\t\t\t\t  En attente !\n\t\t\t\t")]
+          )
+        ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "exampleModal",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "exampleModalLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c(
+                  "h5",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "exampleModalLabel" }
+                  },
+                  [_vm._v("Énigme ?")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      "aria-label": "Close"
+                    }
+                  },
+                  [
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    placeholder: "Code de déverrouillage",
+                    "aria-label": "Username",
+                    "aria-describedby": "basic-addon1"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("X")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-primary", attrs: { type: "button" } },
+                  [_vm._v("Aller")]
+                )
+              ])
+            ])
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("\n\t\t\tBesoin d'aide? Appelez un Game Master "),
+      _c("a", { staticClass: "text-primary", attrs: { href: "#" } }, [
+        _vm._v("ici")
+      ]),
+      _vm._v(" .\n\t\t")
     ])
   }
 ]

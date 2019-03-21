@@ -1,8 +1,8 @@
 <template>
 	<div class="container-fluid">
 		<div class="row shadow p-3 mb-5 bg-white rounded" id="topo">
-			<div class="col-12 col-sm-5 border">
-				logo
+			<div class="col-12 col-sm-5 text-center p-2">
+				<img :src="'../resources/js/components/images/logo.png'">
 			</div>
 			<div class="col-12 col-sm-7" id="eqcouleur">
 				<p>
@@ -18,23 +18,69 @@
 		</div>
 		
 		<p>
+			<button class="btn btn-primary" type="button">
+				Suivant
+			</button>
+		</p>
+		
+		
+		<p>
 			Parcours, énigmes validées :
 		</p>
 		
 		<div class="container">
 		  <div class="row border">
-		    <div class="col-12 col-sm-2 align-self-center text-center p-2">
-		    	Énigme ?
+		    <div class="col-6" id="tabb">
+		    	Énigme 1
 		    </div>
-		    <div class="col-12 col-sm-8 align-self-center p-2">
-		      	<div class="progress">
-				  <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+		    <div class="col-6" id="tabb">
+		      	<div class="alert alert-success" role="alert">
+				  Terminé !
 				</div>
 		    </div>
-		    <div class="col-12 col-sm-2 align-self-center text-center p-2">
-		    	<a type="button" class="text-primary" data-toggle="modal" href="#exampleModal">
-				  Aller
-				</a>
+		  </div>
+		  
+		  <div class="row border">
+		    <div class="col-6" id="tabb">
+		    	Énigme 2
+		    </div>
+		    <div class="col-6" id="tabb">
+		      	<div class="alert alert-dark" role="alert">
+				  En cours !
+				</div>
+		    </div>
+		  </div>
+		  
+		  <div class="row border">
+		    <div class="col-6" id="tabb">
+		    	Énigme 3
+		    </div>
+		    <div class="col-6" id="tabb">
+		      	<div class="alert alert-light" role="alert">
+				  En attente !
+				</div>
+		    </div>
+		  </div>
+		  
+		  <div class="row border">
+		    <div class="col-6" id="tabb">
+		    	Énigme 4
+		    </div>
+		    <div class="col-6" id="tabb">
+		      	<div class="alert alert-light" role="alert">
+				  En attente !
+				</div>
+		    </div>
+		  </div>
+		  
+		  <div class="row border">
+		    <div class="col-6" id="tabb">
+		    	Énigme 5
+		    </div>
+		    <div class="col-6" id="tabb">
+		      	<div class="alert alert-light" role="alert">
+				  En attente !
+				</div>
 		    </div>
 		  </div>
 		</div>
@@ -97,9 +143,40 @@ export default {
 		width: 100px;
 	}
 	
+	.alert {
+		width : 100px;
+		height : 25px;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 auto;		
+		padding: 0
+	}
+	
+	#tabb {
+		text-align: center;
+		padding: 10px 25px
+	}
+	
 	#chrono {
 		width: 300px;
 		text-align: center;
 		margin: 50px auto
+	}
+	
+	button{
+		background-color: #00549c;
+		color: #ffffff;
+		width: 280px;
+		height: 50px;
+		border: 2px solid #00549c;
+		borde-radius: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	button:hover{
+		background-color: white;
+	  	color: #00549c;
+	 	border: 2px solid #00549c;
 	}
 </style>
