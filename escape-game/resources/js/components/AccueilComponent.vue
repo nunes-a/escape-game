@@ -1,168 +1,269 @@
 <template>
+
+<!-- CONTAINER GENERAL -->
 	<div class="container-fluid pt-4">
+
+	
 		<div class="row shadow p-3 mb-5 bg-white rounded" id="topo">
 			<div class="col-12 col-sm-5 text-center p-2">
-				<img :src="'../resources/js/components/images/logo.png'">
+				<img :src="'../../resources/js/components/images/logo.png'">
 			</div>
 			<div class="col-12 col-sm-7" id="eqcouleur">
 				<p>
 					Nom de l'équipe : <b>{{ nomequipe }}</b>
 				</p>
 				<p>
-					Couleur : <span class="badge badge-light">{{ colequipe }}</span>
+					Couleur : <span class="badge badge-danger">{{ colequipe }}</span>
+				</p>
+				<p>
+
+					Membres de l'équipe et sa filiére:
+				</p>
+				<p>
+					Alexandre (DTA)<br>
+					Joel (DTA)<br>
+					Rania (DTA)<br>
+					Corinne (DTA)<br>
+					Emmanuel (DTA)
+				</ul>
 				</p>
 			</div>
 		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-6 text-center">
-					<h1 class="border border-primary rounded-pill shadow" id="chrono">{{ chronoequipe }}</h1>
-				</div>
-				<div class="col-12 col-sm-6 text-center">
-					<button class="btn btn-primary align-items-center" type="button">
-						Suivant
-					</button>
-				</div>
-			</div>
+
+	
+<!-- CHRONO -->		
+		<div class="col-12 text-center">
+			<h1 class="border border-primary rounded-pill shadow" id="chrono">{{ chronoequipe }}</h1>
 		</div>
-		
+<!-- ------ -->		
 
-		
-		
-		<p class="mt-4">
-			Parcours, énigmes validées :
-		</p>
-		
-		<div class="container">
-		  <div class="row border mb-3">
-		    <div class="col-6" id="tabb">
-		    	Énigme 1
-		    </div>
-		    <div class="col-6" id="tabb">
-
-				    <div v-if="nivequipe >= 1" class="alert alert-success" role="alert">
-					  Terminé !
-					</div>
-
-				    <div v-else class="alert alert-light" role="alert">
-					  En attente !
-					</div>
-
-		    </div>
-		  </div>
-		  
-		  <div class="row border mb-3">
-		    <div class="col-6" id="tabb">
-		    	Énigme 2
-		    </div>
-		    <div class="col-6" id="tabb">
-
-				    <div v-if="nivequipe >= 2" class="alert alert-success" role="alert">
-					  Terminé !
-					</div>
-
-				    <div v-else class="alert alert-light" role="alert">
-					  En attente !
-					</div>
-
-		    </div>
-		  </div>
-		  
-		  <div class="row border mb-3">
-		    <div class="col-6" id="tabb">
-		    	Énigme 3
-		    </div>
-		    <div class="col-6" id="tabb">
-
-				    <div v-if="nivequipe >= 3" class="alert alert-success" role="alert">
-					  Terminé !
-					</div>
-
-				    <div v-else class="alert alert-light" role="alert">
-					  En attente !
-					</div>
-
-		    </div>
-		  </div>
-		  
-		  <div class="row border mb-3">
-		    <div class="col-6" id="tabb">
-		    	Énigme 4
-		    </div>
-		    <div class="col-6" id="tabb">
-
-				    <div v-if="nivequipe >= 4" class="alert alert-success" role="alert">
-					  Terminé !
-					</div>
-
-				    <div v-else class="alert alert-light" role="alert">
-					  En attente !
-					</div>
-
-		    </div>
-		  </div>
-		  
-		  <div class="row border">
-		    <div class="col-6" id="tabb">
-		    	Énigme 5
-		    </div>
-		    <div class="col-6" id="tabb">
-
-				    <div v-if="nivequipe >= 5" class="alert alert-success" role="alert">
-					  Terminé !
-					</div>
-
-				    <div v-else class="alert alert-light" role="alert">
-					  En attente !
-					</div>
-
-		    </div>
-		  </div>
+	
+<!-- PHRASE -->
+		<div id="phrs">		
+			<h4 class="text-center">
+				Parcours, énigmes validées :
+			</h4>
 		</div>
-				
-		<p class="mt-4">
-			Besoin d'aide? Appelez un Game Master <a href="#" class="text-primary">ici</a> .
-		</p>
+<!-- ------ -->		
+
+<!-- CONTAINER DES ENIGMES -->		
+		<div class="container">
 		
+			<div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Amphitéâtre :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-success" role="alert">
+						Terminé !
+					</div>
+			    </div>
+			  </div>
+			  
+			  <div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Bibliotéque :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-success" role="alert">
+						Terminé !
+					</div>
+			    </div>
+			  </div>
+			  
+			  <div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Énigme 1 :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-light" role="alert">
+						En attente !
+					</div>
+			    </div>
+			  </div>
+			  
+			  <div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Énigme 2 :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-light" role="alert">
+						En attente !
+					</div>
+			    </div>
+			  </div>
+			  
+			  <div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Énigme 3 :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-light" role="alert">
+						En attente !
+					</div>
+			    </div>
+			  </div>
+			  
+			  <div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Énigme 4 :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-light" role="alert">
+						En attente !
+					</div>
+			    </div>
+			  </div>
+			  
+			  <div class="row border mb-3">
+			    <div class="col-12 col-sm-3" id="tabb">
+			    	Énigme 5 :
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+					<a href="#" class="text-primary">
+						Jouer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<a href="#enigmeModal" class="text-primary" data-toggle="modal">
+						Terminer
+					</a>
+			    </div>
+			    <div class="col-4 col-sm-3" id="tabb">
+			    	<div class="alert alert-light" role="alert">
+						En attente !
+					</div>
+			    </div>
+			  </div>
+			  
+		</div>
+<!-- FIN CONTAINER DES ENIGMES -->
 		
-		
-		
-<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+<!-- MODAL DEVERROUILAGE DES ENIGMES -->
+		<div class="modal fade" id="enigmeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Énigme ?</h5>
+		        <h5 class="modal-title" id="exampleModalLborder border-primary rounded-pill shadowabel">Terminer l'énigme</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		      	<input type="text" class="form-control" placeholder="Code de déverrouillage" aria-label="Username" aria-describedby="basic-addon1">
+		      	<p>Énigme :  nomenigme</p>
+  				<input type="text" class="form-control" placeholder="Code de deverrouilage">
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
-		        <button type="button" class="btn btn-primary">Aller</button>
+		        <button type="button" class="btn btn-primary">Valider</button>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-	</div>
+<!-- ---------------------------- -->
+				
+		<p class="mt-4">
+			Besoin d'aide? Contactez un <a href="#exampleModal" class="text-primary" data-toggle="modal">Game Master</a> .
+		</p>
+
+<!-- MODAL DE CONTACT GAME MASTER -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLborder border-primary rounded-pill shadowabel">Contact avec un Game Master</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<p>Équipe {{ nomequipe }}</p>
+		      	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+		      	<input class="form-control mt-3" type="text" placeholder="Game Master : reponse " readonly>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary">Envoyer</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+<!-- ---------------------------- -->
+	
+	</div>		
 </template>
 
 <script>
 export default {
+	props: ['nomequipe', 'nivequipe', 'courequipe'],
 	data: function(){
 		return {
 			name : 'accueilComponent',
-			nomequipe : '2',
-			nivequipe : '1',
 			colequipe : 'Rouge',
 			chronoequipe : '00:00:00'
 		}
 	}
-	
 }
 </script>
 
@@ -183,8 +284,16 @@ export default {
 		padding: 3px
 	}
 	
+	ul {
+		list-style-type: none
+	}
+	
 	#eqcouleur > p > span {
 		width: 100px;
+	}
+	
+	#phrs {
+		margin: 50px 0 25px 0
 	}
 	
 	.alert {
@@ -202,26 +311,25 @@ export default {
 	}
 	
 	#chrono {
-		width: 300px;
+		width: 350px;
 		text-align: center;
 		margin: 20px auto
 	}
 	
-	button{
+	#suiv{
 		background-color: #00549c;
 		color: #ffffff;
-		width: 300px;
-		height: 40px;
-		border: 2px solid #00549c;
-		borde-radius: 0;
-		text-transform: uppercase;
-		font-weight: bold;
-		margin: 20px auto
+		width: 350px;
+		text-decoration: none;
+		padding: 10px;
+		/*text-transform: uppercase;*/
+		margin: 20px auto		
 	}
-
-	button:hover{
+	
+	#suiv:hover{
 		background-color: white;
 	  	color: #00549c;
-	 	border: 2px solid #00549c;
+	 	border: 1px solid #00549c;
+	 	text-decoration: none
 	}
 </style>

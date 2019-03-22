@@ -23,12 +23,15 @@ Route::get('/insc', function () {
     return view('insc');
 });
 
-Route::get('/jeu/{nomequipe}', function ($nomequipe=1) {
+Route::get('/equipe/{nomequipe?}', function ($nomequipe=1) {
     return view('accueil')->with('nomequipe', $nomequipe);
 });
 
 
-// Route::get('/jeu/{nomequipe}', function () {
-//     $nomequipe = request('nomequipe');
-//     return view('accueil',['nomequipe' => $nomequipe]);
-// });
+Route::get('/master/{nommaster?}', function ($nommaster=1) {
+    return view('admin')->with('nommaster', $nommaster);
+});
+
+
+
+

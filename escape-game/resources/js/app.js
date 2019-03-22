@@ -27,6 +27,7 @@ import FooterComponent from './components/FooterComponent.vue';
 import ContentComponent from './components/ContentComponent.vue';
 import InscComponent from './components/InscComponent.vue';
 import AccueilComponent from './components/AccueilComponent.vue';
+import AdminComponent from './components/AdminComponent.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -43,7 +44,8 @@ const app = new Vue({
     		'footer-component' : FooterComponent,
     		'content-component': ContentComponent,
     		'insc-component'   : InscComponent,
-    		'accueil-component': AccueilComponent
+    		'accueil-component': AccueilComponent,
+    		'admin-component': AdminComponent
     	}
 });
 
